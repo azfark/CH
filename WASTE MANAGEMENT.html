@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEarth Waste Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #388E3C;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            background-image: url('https://i.pinimg.com/564x/d1/39/7a/d1397adfe17ca0ce34f49cb2aadf53a8.jpg');
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            padding: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+        }
+
+        .services {
+            text-align: center;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-content {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .additional-content h2 {
+            font-size: 28px;
+            color: #4CAF50;
+        }
+
+        .additional-content p {
+            margin: 20px 0;
+        }
+
+        .additional-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .additional-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .additional-content ul li strong {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .ways-to-reduce-waste {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .ways-to-reduce-waste h2 {
+            font-size: 28px;
+            color: #4CAF50;
+        }
+
+        .ways-to-reduce-waste ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ways-to-reduce-waste ul li {
+            margin-bottom: 10px;
+        }
+
+        .ways-to-reduce-waste ul li strong {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .about-us,
+        .testimonials {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .about-us h2,
+        .testimonials h2 {
+            font-size: 28px;
+            color: #4CAF50;
+        }
+
+        .about-us p,
+        .testimonials blockquote {
+            margin: 20px 0;
+        }
+
+        .contact-us {
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 40px 0;
+            margin-top: 20px;
+        }
+
+        .contact-us h2 {
+            font-size: 28px;
+        }
+
+        .contact-us p {
+            margin: 20px 0;
+        }
+
+        .centered-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .centered-content {
+            text-align: center;
+        }
+
+        .centered-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #333; /* Set the background color of the footer */
+            color: #fff; /* Set the default text color to white in the footer */
+            padding: 20px; /* Add some padding to the footer */
+        }
+
+        .about-us,
+        .testimonials,
+        .contact-us {
+            color: #000;
+       }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>GreenEarth Waste Management</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <h2>Your Partner in Waste Management</h2>
+            <p>Together, we can make the world a cleaner and greener place.</p>
+        </div>
+
+        <div class="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Waste Collection</h3>
+                <p>We offer efficient waste collection services, ensuring your waste is disposed of responsibly.</p>
+            </div>
+            <div class="service-card">
+                <h3>Recycling</h3>
+                <p>Join us in our mission to reduce waste. We provide comprehensive recycling programs to help you do your part.</p>
+            </div>
+            <div class="service-card">
+                <h3>Composting</h3>
+                <p>Convert organic waste into valuable compost for a sustainable future. We offer easy composting solutions.</p>
+            </div>
+        </div>
+
+        <div class="additional-content">
+            <h2>Waste Management Ideas</h2>
+            <p>At GreenEarth Waste Management, we are always exploring new and innovative ways to manage waste and protect the environment.</p>
+            <ul>
+                <li><strong>Waste-to-Energy Conversion:</strong> Researching technology to convert certain types of waste into energy.</li>
+                <li><strong>Electronic Waste Recycling:</strong> Expanding services to include responsible recycling of electronic devices.</li>
+                <li><strong>Education and Outreach:</strong> Committed to educating communities on waste reduction and sustainable practices.</li>
+            </ul>
+        </div>
+
+        <div class="additional-content">
+            <h2>Environmental Impact of Waste</h2>
+            <p>Improper waste disposal can have a significant impact on the environment. Key facts include:</p>
+            <ul>
+                <li>Landfills contribute to soil and water pollution, affecting ecosystems and wildlife.</li>
+                <li>Plastic waste in the oceans poses a threat to marine life.</li>
+                <li>Reducing, reusing, and recycling can help conserve natural resources and reduce energy consumption.</li>
+            </ul>
+        </div>
+
+        <div class="additional-content">
+            <h2>Benefits of Recycling</h2>
+            <p>Recycling plays a crucial role in environmental conservation. Consider these facts:</p>
+            <ul>
+                <li>Recycling one ton of paper can save up to 17 trees and reduce energy consumption significantly.</li>
+                <li>Aluminum recycling saves 95% of the energy required to produce aluminum from raw materials.</li>
+                <li>Recycling helps reduce greenhouse gas emissions, contributing to the fight against climate change.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="centered-content">
+        <img src="https://cdn.vectorstock.com/i/1000x1000/08/36/waste-management-concept-vector-10090836.webp" alt="Environmental Image">
+        <p>Working together for a cleaner and greener world.</p>
+    </div>
+
+    <footer>
+        <div class="about-us">
+           
+    <footer>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>GreenEarth Waste Management is committed to providing sustainable waste management solutions. With a focus on innovation and environmental consciousness, we strive to make the world a cleaner and greener place.</p>
+        </div>
+
+        <div class="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                "Working with GreenEarth Waste Management has been a game-changer for our sustainability efforts. Their dedication to responsible waste disposal is truly commendable."
+            </blockquote>
+            <blockquote>
+                "The recycling programs offered by GreenEarth have made a significant impact on our community. It's inspiring to see a company so committed to positive environmental change."
+            </blockquote>
+        </div>
+        <div class="contact-us">
+            <h2>Contact Us Today</h2>
+            <p>Ready to take the next step towards a cleaner future? Contact GreenEarth Waste Management for effective waste solutions tailored to your needs.</p>
+            <p>Email: info@greenearthwaste.com | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+</body>
+</html>
